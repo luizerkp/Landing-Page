@@ -4,6 +4,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -23,14 +24,17 @@ a {
     text-decoration: none;
 }
 
-button {
-    border-radius: 5px;
-    border: none;
+.hero-btn, .contact-btn {
     padding: 10px 35px;
     background-color: #3882F6;
     font-weight: bold;
     font-size: 1em;
     color: #E5E7EB;
+}
+
+.hero-btn {
+    border-radius: 5px;
+    border: none;
 }
 
 .hero-sub, a {
@@ -41,6 +45,8 @@ button {
 .landing {
     background: #1F2937;
     display: flex;
+    flex-wrap: wrap;
+    flex: 1;
     justify-content: space-around;
     padding: 0 100px 100px;
 }
@@ -102,24 +108,118 @@ button {
     justify-content: center;
     align-items: baseline;
 }
+
 .info a {
     color: darkgrey;
 }
 
+figcaption, figcaption a  {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
 .column {
-    flex: 22%;
-    max-width: 300px;
+    flex: 24.5%;
+    max-width: 350px;
     flex-wrap: wrap;
     padding: 0 4px;
     text-align: center;
 }
+
+.column figure {
+    padding: 12px;
+    margin: 12px;
+}
+
 .column img {
     max-width: 300px;
     max-height: 300px;
-    margin: 6px;
 }
+
 .column p {
     padding: 10px;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column; 
+    background-color: #909294;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.review-header {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 12px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.review {
+    flex: 300px;
+    width: 300px;
+    margin: 10px;
+    padding: 14px;
+    flex-grow: 0;
+    background-color: #E5E7EB;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 1px;
+    box-shadow: 5px 5px 5px 5px darkgrey;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+}
+
+.name {
+    padding-right: 12px;
+    text-align: end;
+}
+.contact {
+    display: flex;
+    background-color: #3882F6;
+    margin: 100px 200px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column; 
+    width: 49%;
+    margin: 12px;
+    padding: 12px; 
+}
+.contact-text p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.contact-btn {
+    border-radius: 10px;
+    border: 2px #E5E7EB;
+    border-style: solid;
+}
+
+.contact-main {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E5E7EB;
+}
+
+.contact-sub {
+    color: #E5E7EB;
 }
 .footer {
     display: flex;
